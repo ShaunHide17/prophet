@@ -1132,6 +1132,7 @@ class Prophet(object):
             'S': len(self.changepoints_t),
             'y': history['y_scaled'],
             't': history['t'],
+			'w': np.sqrt(history['n'].values),
             't_change': self.changepoints_t,
             'X': seasonal_features,
             'sigmas': prior_scales,
