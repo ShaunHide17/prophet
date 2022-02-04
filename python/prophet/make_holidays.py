@@ -40,7 +40,7 @@ def get_holiday_names(country):
     return set(holiday_names)
 
 
-def make_holidays_df(year_list, country, province=None, state=None):
+def make_holidays_df(year_list, country, province=None, state=''):
     """Make dataframe of holidays for given years and countries
 
     Parameters
